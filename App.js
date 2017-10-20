@@ -5,6 +5,7 @@
  */
 
 import React, { Component } from 'react';
+import { Container, Button, Text } from 'native-base';
 import {
   Platform,
   StyleSheet,
@@ -22,17 +23,13 @@ const instructions = Platform.select({
 export default class App extends Component<{}> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
+      <Container>
+        <Button>
+          <Text>
+            Button
+          </Text>
+        </Button>
+      </Container>
     );
   }
 }
