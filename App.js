@@ -20,9 +20,12 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+import getTheme from './native-base-theme/components';    
+
 export default class App extends Component<{}> {
   render() {
     return (
+      <StyleProvider  style={getTheme()}> 
       <Container>
         <Header>
           <Left>
@@ -40,6 +43,7 @@ export default class App extends Component<{}> {
           </Right>
         </Header>
       </Container>
+        </StyleProvider>   
     );
   }
 }
