@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { Container, Button, Text } from 'native-base';
+import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import {
   Platform,
   StyleSheet,
@@ -24,11 +24,21 @@ export default class App extends Component<{}> {
   render() {
     return (
       <Container>
-        <Button>
-          <Text>
-            Button
-          </Text>
-        </Button>
+        <Header>
+          <Left>
+            <Button transparent>
+              <Icon name='arrow-back' />
+            </Button>
+          </Left>
+          <Body>
+            <Title>Header</Title>
+          </Body>
+          <Right>
+            <Button transparent>
+              <Icon name='menu' />
+            </Button>
+          </Right>
+        </Header>
       </Container>
     );
   }
