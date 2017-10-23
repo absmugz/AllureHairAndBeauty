@@ -5,9 +5,16 @@
  */
 
 import React, { Component } from 'react';
-import { Container, Header, Left, Body, Right, Button, Icon, Title, StyleProvider, Content, Footer, FooterTab} from 'native-base';
+import { Container, Header, Left, Body, Right, Button, Icon, Title, StyleProvider, Content, Footer, FooterTab, Drawer} from 'native-base';
 import getTheme from './native-base-theme/components';
 import commonColor from './native-base-theme/variables/commonColor';
+
+
+
+import Blog from "./components/blog/Blog";
+import Book from "./components/book/Book";
+
+
 
 import {
   Platform,
@@ -27,15 +34,25 @@ const instructions = Platform.select({
 
 export default class App extends Component<{}> {
   render() {
+    
+    
+    closeDrawer = () => {
+      this.drawer._root.close()
+    };
+    openDrawer = () => {
+      this.drawer._root.open()
+    };
+    
     return (
       <StyleProvider style={getTheme(commonColor)}>
       <Container>
         <Header>
-          <Left>
-            <Button transparent>
-              <Icon name='menu' />
-            </Button>
-          </Left>
+          <Drawer
+        ref={(ref) => { this.drawer = ref; }}
+        content={<SideMenu navigator={this.navigator} />}
+        onClose={() => this.closeDrawer()} >
+      // Main View
+      </Drawer>
           <Body>
             <Title>Allure Hair & Beauty</Title>
           </Body>
