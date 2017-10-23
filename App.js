@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import { Container, Header, Left, Body, Right, Button, Icon, Title, StyleProvider} from 'native-base';
+import { Container, Header, Left, Body, Right, Button, Icon, Title, StyleProvider, Content, Footer, FooterTab} from 'native-base';
 import getTheme from './native-base-theme/components';
 import commonColor from './native-base-theme/variables/commonColor';
 
@@ -40,6 +40,29 @@ export default class App extends Component<{}> {
             <Title>Allure Hair & Beauty</Title>
           </Body>
         </Header>
+        
+         <Content />
+        
+         <Footer>
+          <FooterTab>
+            <Button vertical>
+              <Icon name="apps" />
+              <Text>Apps</Text>
+            </Button>
+            <Button vertical>
+              <Icon name="camera" />
+              <Text>Camera</Text>
+            </Button>
+            <Button vertical active>
+              <Icon active name="navigate" />
+              <Text>Navigate</Text>
+            </Button>
+            <Button vertical>
+              <Icon name="person" />
+              <Text>Contact</Text>
+            </Button>
+          </FooterTab>
+        </Footer>
       </Container>
         </StyleProvider>   
     );
