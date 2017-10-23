@@ -33,17 +33,12 @@ export default class App extends Component<{}> {
         <Header>
           <Left>
             <Button transparent>
-              <Icon name='arrow-back' />
+              <Icon name='menu' />
             </Button>
           </Left>
           <Body>
             <Title>Allure Hair & Beauty</Title>
           </Body>
-          <Right>
-            <Button transparent>
-              <Icon name='menu' />
-            </Button>
-          </Right>
         </Header>
       </Container>
         </StyleProvider>   
