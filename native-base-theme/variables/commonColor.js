@@ -109,7 +109,7 @@ export default {
   cardDefaultBg: "#fff",
 
   // Color
-  brandPrimary: "#2874F0",
+  brandPrimary: "#f58d75",
   brandInfo: "#62B1F6",
   brandSuccess: "#5cb85c",
   brandDanger: "#d9534f",
@@ -134,7 +134,7 @@ export default {
 
   // Footer
   footerHeight: isIphoneX ? 89 : 55,
-  footerDefaultBg: "#2874F0",
+  footerDefaultBg: "#f58d75",
   footerPaddingBottom: isIphoneX ? 34 : 0,
 
   // FooterTab
@@ -146,7 +146,7 @@ export default {
   tabActiveBgColor: platform === "ios" ? "#1569f4" : undefined,
 
   // Tab
-  tabDefaultBg: "#2874F0",
+  tabDefaultBg: "#f58d75",
   topTabBarTextColor: "#b3c7f9",
   topTabBarActiveTextColor: "#fff",
   topTabActiveBgColor: platform === "ios" ? "#1569f4" : undefined,
@@ -155,7 +155,7 @@ export default {
 
   // Header
   toolbarBtnColor: "#fff",
-  toolbarDefaultBg: "#2874F0",
+  toolbarDefaultBg: "#f58d75",
   toolbarHeight: platform === "ios" ? (isIphoneX ? 88 : 64) : 56,
   toolbarIconSize: platform === "ios" ? 20 : 22,
   toolbarSearchIconSize: platform === "ios" ? 20 : 23,
@@ -164,7 +164,7 @@ export default {
   toolbarInverseBg: "#222",
   toolbarTextColor: "#fff",
   iosStatusbar: "light-content",
-  toolbarDefaultBorder: "#2874F0",
+  toolbarDefaultBorder: "#f58d75",
   get statusBarColor() {
     return color(this.toolbarDefaultBg)
       .darken(0.2)

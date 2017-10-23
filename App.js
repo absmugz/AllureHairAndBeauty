@@ -5,7 +5,10 @@
  */
 
 import React, { Component } from 'react';
-import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
+import { Container, Header, Left, Body, Right, Button, Icon, Title, StyleProvider} from 'native-base';
+import getTheme from './native-base-theme/components';
+import commonColor from './native-base-theme/variables/commonColor';
+
 import {
   Platform,
   StyleSheet,
@@ -20,12 +23,12 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-import getTheme from './native-base-theme/components';    
+
 
 export default class App extends Component<{}> {
   render() {
     return (
-      <StyleProvider  style={getTheme()}> 
+      <StyleProvider style={getTheme(commonColor)}>
       <Container>
         <Header>
           <Left>
@@ -34,7 +37,7 @@ export default class App extends Component<{}> {
             </Button>
           </Left>
           <Body>
-            <Title>Header</Title>
+            <Title>Allure Hair & Beauty</Title>
           </Body>
           <Right>
             <Button transparent>
