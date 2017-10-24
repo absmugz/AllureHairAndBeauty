@@ -8,12 +8,13 @@ import React, { Component } from 'react';
 import { Container, Header, Left, Body, Right, Button, Icon, Title, StyleProvider, Content, Footer, FooterTab, Drawer} from 'native-base';
 import getTheme from './native-base-theme/components';
 import commonColor from './native-base-theme/variables/commonColor';
+import SideMenu from './components/sideMenu/SideMenu';
 
 
-
-import Blog from "./components/blog/Blog";
-import Book from "./components/book/Book";
-
+/**
+import Blog from "./components/blog/Blog.js";
+import Book from "./components/book/Book.js";
+ */
 
 
 import {
@@ -33,26 +34,33 @@ const instructions = Platform.select({
 
 
 export default class App extends Component<{}> {
-  render() {
-    
-    
-    closeDrawer = () => {
+
+     closeDrawer = () => {
       this.drawer._root.close()
     };
     openDrawer = () => {
       this.drawer._root.open()
     };
     
+  
+  render() {
+    
+
     return (
-      <StyleProvider style={getTheme(commonColor)}>
-      <Container>
-        <Header>
-          <Drawer
+      <Drawer
         ref={(ref) => { this.drawer = ref; }}
         content={<SideMenu navigator={this.navigator} />}
         onClose={() => this.closeDrawer()} >
-      // Main View
-      </Drawer>
+        
+      <StyleProvider style={getTheme(commonColor)}>
+      <Container>
+        <Header>
+         <Left>
+            <Button
+            onPress={() => this.openDrawer()}>
+              <Icon name="menu" />
+            </Button>
+          </Left>
           <Body>
             <Title>Allure Hair & Beauty</Title>
           </Body>
@@ -81,7 +89,8 @@ export default class App extends Component<{}> {
           </FooterTab>
         </Footer>
       </Container>
-        </StyleProvider>   
+        </StyleProvider>  
+        </Drawer>
     );
   }
 }
