@@ -9,6 +9,7 @@ import { Container, Header, Left, Body, Right, Button, Icon, Title, StyleProvide
 import getTheme from './native-base-theme/components';
 import commonColor from './native-base-theme/variables/commonColor';
 import SideMenu from './components/sideMenu/SideMenu';
+import DrawerExample from "./js/Drawer";
 
 
 /**
