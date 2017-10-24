@@ -8,13 +8,13 @@ export default class SideMenu extends Component {
         <Content>
           <List>
             <ListItem>
-              <Text>Simon Mignolet</Text>
+              <Text>Book Now!</Text>
             </ListItem>
             <ListItem>
-              <Text>Nathaniel Clyne</Text>
+              <Text>Pricelist</Text>
             </ListItem>
             <ListItem>
-              <Text>Dejan Lovren</Text>
+              <Text>Blog</Text>
             </ListItem>
           </List>
         </Content>
@@ -22,3 +22,6 @@ export default class SideMenu extends Component {
     );
   }
 }
+
+
+
