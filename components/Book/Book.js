@@ -8,9 +8,9 @@ export default class Book extends Component {
        <StyleProvider style={getTheme(commonColor)}>
         <Container>
          <Header>
-         <Left>
-            <Button>
-              <Icon name="menu" />
+          <Left>
+            <Button transparent onPress={() => this.props.navigation.goBack()}>
+              <Icon name="arrow-back" />
             </Button>
           </Left>
           <Body>
@@ -34,7 +34,7 @@ export default class Book extends Component {
               <Item last>
               <Input placeholder="Style" />
             </Item>
-            <Button full info>
+            <Button full style={{ backgroundColor: "#f78f76", alignSelf: "center" }}>
             <Text>Book Now</Text>
           </Button>
           </Form>
