@@ -14,6 +14,7 @@ import SideBar from "./components/sidebar";
 import Home from "./components/Home/Home";
 import Blog from "./components/Blog/Blog";
 import Book from "./components/Book/Book";
+import Pricelist from "./components/Pricelist";
 
 
 

@@ -9,6 +9,7 @@ import { StackNavigator } from "react-navigation";
 import Drawer from "./Drawer";
 import Blog from "../components/Blog/Blog";
 import Book from "../components/Book/Book";
+import Pricelist from "../components/Pricelist";
 
 
 
@@ -18,6 +19,7 @@ const AppNavigator = StackNavigator(
 
         Blog: { screen: Blog },
         Book: { screen: Book },
+        Pricelist: { screen: Pricelist },
       
     },
     {

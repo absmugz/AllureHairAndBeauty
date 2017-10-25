@@ -35,19 +35,19 @@ const datas = [
 	{
 		name: "Book Now",
 		route: "Book",
-		icon: "phone-portrait",
+		icon: "calendar",
 		bg: "#C5F442",
 	},
-		{
-		name: "Pricelist",
-		route: "Pricelist",
-		icon: "phone-portrait",
-		bg: "#C5F442",
-	},
+	
 	{
 		name: "Blog",
 		route: "Blog",
-		icon: "easel",
+		icon: "woman",
+		bg: "#C5F442",
+	},	{
+		name: "Pricelist",
+		route: "Pricelist",
+		icon: "list",
 		bg: "#C5F442",
 	},
 	
