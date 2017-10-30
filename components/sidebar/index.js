@@ -18,7 +18,7 @@ import {
 	variables,
 } from "native-base";
 
-import styles from "./style";
+import styles from "./styles";
 
 const drawerCover = require("../../img/drawer-cover.png");
 
@@ -28,19 +28,19 @@ const datas = [
 	{
 		name: "Book Now",
 		route: "Book",
-		icon: "phone-portrait",
+		icon: "calendar",
 		bg: "#C5F442",
 	},
 		{
 		name: "Pricelist",
 		route: "Pricelist",
-		icon: "phone-portrait",
+		icon: "list",
 		bg: "#C5F442",
 	},
 	{
 		name: "Blog",
 		route: "Blog",
-		icon: "easel",
+		icon: "woman",
 		bg: "#C5F442",
 	},
 	

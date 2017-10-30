@@ -4,6 +4,8 @@ import getTheme from '../../native-base-theme/components';
 import commonColor from '../../native-base-theme/variables/commonColor';
 
 
+import styles from "./styles";
+
 import TabOne from './tabOne';
 import TabTwo from './tabTwo';
 import TabThree from './tabThree';

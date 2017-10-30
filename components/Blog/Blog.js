@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-
+// JavaScript Documentimport React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   Container,
   Header,
@@ -63,6 +63,8 @@ const datas = [
 ];
 
 class Blog extends Component {
+  
+  
   render() {
     return (
       <StyleProvider style={getTheme(commonColor)}>
